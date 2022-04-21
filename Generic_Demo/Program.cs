@@ -19,10 +19,11 @@ namespace Generic_Demo
             {
                 intarr[i] = Convert.ToInt32(Console.ReadLine());
             }
-            double[] doublearr = { 11.22, 33.21, 43.42 };
-            char[] chararr = { 'a', 'b', 'c', 'd', 'e', };
             PrintArray.PrintArray_Elements(intarr);
             Console.WriteLine("\n");
+            double[] doublearr = { 11.22, 33.21, 43.42 };
+            char[] chararr = { 'a', 'b', 'c', 'd', 'e', };
+           
             PrintArray.PrintArray_Elements(doublearr);
             Console.WriteLine("\n");
             PrintArray.PrintArray_ele(10);
