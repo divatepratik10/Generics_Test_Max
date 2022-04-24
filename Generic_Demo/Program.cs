@@ -64,7 +64,7 @@ namespace Generic_Demo
                     break;
 
                 case 5:
-                    float a = 99.24F, b = 524.433F, c = 82.6265F;
+                    float a = 99.24F, b = 524.433F, c = 821.6265F;
                     Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.", FindMax.FindFLOATValue(a, b, c), a, b, c);
                     break;
 
