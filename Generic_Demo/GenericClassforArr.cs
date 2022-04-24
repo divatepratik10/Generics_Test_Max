@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generic_Demo
 {
-    internal class GenericClassforArr<T>
+    internal class GenericClassforArr<T,E>
     {
         public T[] arr;
 
@@ -20,6 +20,11 @@ namespace Generic_Demo
             {
                 Console.WriteLine(element);
             }
+        }
+
+        public void Test(E data)
+        {
+            Console.Write(data);
         }
     }
 }

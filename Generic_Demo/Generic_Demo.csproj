@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindMax.cs" />
     <Compile Include="GenericClassforArr.cs" />
     <Compile Include="GenericPrintArray.cs" />
     <Compile Include="PrintArray.cs" />

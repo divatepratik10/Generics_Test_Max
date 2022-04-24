@@ -49,16 +49,23 @@ namespace Generic_Demo
                     break;
 
                 case 3:
-                    new GenericClassforArr<int>(intarrr).PrintArray_Elements();
-                    //GenericClassforArr<int> intobj = new GenericClassforArr<int>(intarrr);
-                    //intobj.PrintArray_Elements();
-                    GenericClassforArr<double> doubleobj = new GenericClassforArr<double>(doublearr);
-                    doubleobj.PrintArray_Elements();
-                    GenericClassforArr<char> charobj = new GenericClassforArr<char>(chararr);
-                    charobj.PrintArray_Elements();
+                    //new GenericClassforArr<int,string>(intarrr).PrintArray_Elements();
+                    GenericClassforArr<int,string> intobj = new GenericClassforArr<int,string>(intarrr);
+                    intobj.PrintArray_Elements();
+                    intobj.Test("Tested");
+                    //new GenericClassforArr<double>(doublearr).PrintArray_Elements(); 
+                    //GenericClassforArr<char> charobj = new GenericClassforArr<char>(chararr);
+                    //charobj.PrintArray_Elements();
                     break;
-            }
-            
+
+                case 4:
+                    int x = 32, y = 73, z = 12;
+                    Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.",FindMax.FindINTMax(x,y,z),x,y,z); 
+                    break;
+
+                
+            } 
+             
             Console.ReadLine();
         }
     }
