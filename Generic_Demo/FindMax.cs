@@ -31,6 +31,30 @@ namespace Generic_Demo
                 return 0;
             }
         }
-        
+
+        public static float FindFLOATValue(float first, float second, float third)
+        {
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            {
+                Console.WriteLine("First is having maximum value.");
+                return first;
+            }
+            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            {
+                Console.WriteLine("Second is having maximum value.");
+                return second;
+            }
+            else if (third.CompareTo(first) > 0 && third.CompareTo(first) > 0)
+            {
+                Console.WriteLine("Third is having maximum value.");
+                return third;
+            }
+            else
+            {
+                Console.WriteLine("Something Went Wrong.....");
+                return 0;
+            }
+        }
+
     }
 }

@@ -63,7 +63,12 @@ namespace Generic_Demo
                     Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.",FindMax.FindINTMax(x,y,z),x,y,z); 
                     break;
 
-                
+                case 5:
+                    float a = 99.24F, b = 54.433F, c = 82.6265F;
+                    Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.", FindMax.FindFLOATValue(a, b, c), a, b, c);
+                    break;
+
+
             } 
              
             Console.ReadLine();
