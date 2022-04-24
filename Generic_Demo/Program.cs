@@ -11,7 +11,9 @@ namespace Generic_Demo
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Generic Method Programme.");
-            Console.WriteLine("Enter choice : ");
+            Console.WriteLine("Enter choice : \n1 : Print Array (int/double/char)\n2 : Print Generic array (int/double/char)" +
+                "\n3 : Generic class for array.\n4 : Find Max Value (Int)\n5 : Find Max Value (double)\n6 : Find Max Value (string)" +
+                "\n7 : Generic Test Max\n8 : ");
             int choice = Convert.ToInt32(Console.ReadLine());
             int[] intarrr = { 10, 34, 65 };
             double[] doublearr = { 11.22, 33.21, 43.42 };
@@ -65,9 +67,18 @@ namespace Generic_Demo
 
                 case 5:
                     float a = 99.24F, b = 524.433F, c = 821.6265F;
-                    Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.", FindMax.FindFLOATValue(a, b, c), a, b, c);
+                    Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.", FindMax.FindFLOATMax(a, b, c), a, b, c);
                     break;
 
+                case 6:
+                    string p = "Pratik", q = "Rajkumar", r = "Divate";
+                    Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.", FindMax.FindStringMax(p,q,r), p,q,r);
+                    break;
+
+                case 7:
+                    int k = 12, l = 42, m = 53;
+                    new GenericFindMax<int>(k,l,m).TestMaximum();
+                    break;
 
             } 
              

@@ -32,7 +32,7 @@ namespace Generic_Demo
             }
         }
 
-        public static float FindFLOATValue(float first, float second, float third)
+        public static float FindFLOATMax(float first, float second, float third)
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
@@ -52,9 +52,32 @@ namespace Generic_Demo
             else
             {
                 Console.WriteLine("Something Went Wrong.....");
-                return 0;
+                return 0.00F;
             }
         }
 
+        public static string FindStringMax(string first, string second, string third)
+        {
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            {
+                Console.WriteLine("First is having maximum value.");
+                return first;
+            }
+            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            {
+                Console.WriteLine("Second is having maximum value.");
+                return second;
+            }
+            else if (third.CompareTo(first) > 0 && third.CompareTo(first) > 0)
+            {
+                Console.WriteLine("Third is having maximum value.");
+                return third;
+            }
+            else
+            {
+                Console.WriteLine("Something Went Wrong.....");
+                return null;
+            }
+        }
     }
 }

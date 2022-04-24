@@ -1,0 +1,29 @@
+﻿public static float FindFLOATValue(float first, float second, float third)
+        {
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            {
+                Console.WriteLine("First is having maximum value.");
+                return first;
+            }
+            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            {
+                Console.WriteLine("Second is having maximum value.");
+                return second;
+            }
+            else if (third.CompareTo(first) > 0 && third.CompareTo(first) > 0)
+            {
+                Console.WriteLine("Third is having maximum value.");
+                return third;
+            }
+            else
+            {
+                Console.WriteLine("Something Went Wrong.....");
+                return 0;
+            }
+        }
+
+
+        case 5:
+                    float a = 23.24F, b = 54.433F, c = 82.6265F;
+                    Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.",FindMax.FindFLOATValue(a,b,c),a,b,c);
+                    break;

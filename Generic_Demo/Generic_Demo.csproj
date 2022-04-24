@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="FindMax.cs" />
     <Compile Include="GenericClassforArr.cs" />
+    <Compile Include="GenericFindMax.cs" />
     <Compile Include="GenericPrintArray.cs" />
     <Compile Include="PrintArray.cs" />
     <Compile Include="Program.cs" />
