@@ -59,7 +59,7 @@ namespace Generic_Demo
                     break;
 
                 case 4:
-                    int x = 32, y = 73, z = 12;
+                    int x = 99, y = 73, z = 12;
                     Console.WriteLine("{0} is having max value, out of {1}, {2}, {3}.",FindMax.FindINTMax(x,y,z),x,y,z); 
                     break;
 
