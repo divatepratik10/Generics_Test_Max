@@ -13,7 +13,7 @@ namespace Generic_Demo
             Console.WriteLine("Welcome to Generic Method Programme.");
             Console.WriteLine("Enter choice : \n1 : Print Array (int/double/char)\n2 : Print Generic array (int/double/char)" +
                 "\n3 : Generic class for array.\n4 : Find Max Value (Int)\n5 : Find Max Value (double)\n6 : Find Max Value (string)" +
-                "\n7 : Generic Test Max\n8 : ");
+                "\n7 : Generic Test Max\n8 : Find Maximum value by array sorting method");
             int choice = Convert.ToInt32(Console.ReadLine());
             int[] intarrr = { 10, 34, 65 };
             double[] doublearr = { 11.22, 33.21, 43.42 };
@@ -78,6 +78,11 @@ namespace Generic_Demo
                 case 7:
                     int k = 12, l = 42, m = 53;
                     new GenericFindMax<int>(k,l,m).TestMaximum();
+                    break;
+
+                case 8:
+                    FindMaxbyArrSort<int> obj = new FindMaxbyArrSort<int>(intarrr);
+                    obj.PrintMax();
                     break;
 
             } 
